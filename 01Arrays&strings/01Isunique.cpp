@@ -1,3 +1,4 @@
+// https://godbolt.org/z/jsPGsM3bo
 
 #include <bits/stdc++.h>
 
