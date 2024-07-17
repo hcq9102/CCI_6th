@@ -51,7 +51,7 @@ if intersect:
         therefore, they can reach to the intersection at the same time.
     a+c +b = b+c +a;
 
-        if there is no intersection, then pA and pB will reach to the null at the same time.
+        if there is no intersection, then pA and pB will reach the(end) null at the same time.
     a+b = b+a;
        
 
