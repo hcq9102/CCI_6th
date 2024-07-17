@@ -71,7 +71,7 @@ void printList(Node* head){
 }
 //------------------------------------------------------------------//
 
-// 2.7 loop detection:
+// 2.8 loop detection:
 
 /* 
 fast/slow pointer:
