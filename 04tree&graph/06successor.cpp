@@ -18,11 +18,11 @@ TreeNode* Successor(TreeNode *root, TreeNode *p){
     if(root == nullptr) return nullptr;
 
     TreeNode *cur = root;
-    TreeNode *ans = nullptr;
+    TreeNode *ans = nullptr; 
 
     while(cur){
         if(cur->val > p->val){
-            ans = cur;
+            ans = cur;// ans for storing the smallest val among the nodes that greater than  p
             cur = cur->left;
         }else{
             cur = cur->right;
