@@ -79,6 +79,13 @@ vector<char> projectOrder(vector<char> &projects,vector<vector<char>> &dependenc
         res.push_back(curP);
     
     }
+
+    // Check if we used up all projects
+    if ( numP-- != 0) {
+        cout << "Error: There is a cycle in the graph or some projects are not reachable" << endl;
+        return {};
+    }
+   
     return res;
 
 }
