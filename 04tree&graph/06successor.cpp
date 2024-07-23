@@ -13,7 +13,7 @@ struct TreeNode{
     TreeNode(int x): val(x), left(nullptr), right(nullptr){}
 };
 
-// find the next node of p
+// find the next node of p: leftmost of right subtree.
 TreeNode* Successor(TreeNode *root, TreeNode *p){
     if(root == nullptr) return nullptr;
 
