@@ -1,4 +1,4 @@
-// https://godbolt.org/z/qYrn479TY
+// https://godbolt.org/z/MPET74vEz
 
 #include <bits/stdc++.h>
 
@@ -46,13 +46,21 @@ int main(){
     root1->right->left = new TreeNode(5);
     root1->right->right = new TreeNode(7);
 
-    TreeNode* p = root1->left;
+    TreeNode* p = root1->right->right;
     TreeNode* ans =Successor(root1,p );
 
-    cout <<"p is: "<<  p->val << ", and its successor is: "<< ans->val <<endl;
+    if (ans) {
+        cout << "p is: " << p->val << ", and its successor is: " << ans->val << endl;
+    } else {
+        cout << "p is: " << p->val << ", and it has no successor." << endl;
+    }
    
     return 0;
 }
+
+
+
+
 
 
 
