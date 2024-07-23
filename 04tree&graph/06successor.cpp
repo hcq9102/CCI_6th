@@ -1,4 +1,4 @@
-// https://godbolt.org/z/MPET74vEz
+// https://godbolt.org/z/ja3418q13
 
 #include <bits/stdc++.h>
 
@@ -42,7 +42,7 @@ int main(){
     root1->right = new TreeNode(6);
     root1->left->left = new TreeNode(1);
     root1->left->right = new TreeNode(3);
-    root1->left->right->right = new TreeNode(8);
+    
     root1->right->left = new TreeNode(5);
     root1->right->right = new TreeNode(7);
 
