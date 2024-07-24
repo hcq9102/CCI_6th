@@ -1,0 +1,32 @@
+// https://godbolt.org/z/h5reEPzze
+
+#include <iostream>
+#include <string>
+
+std::string binToStr(double num) {
+    std::string binaryRepresentation = "0.";
+    int count = 0;
+    while (num > 0 && count<32) {
+        // Check for the maximum number of binary digits
+
+        num *= 2;
+        if (num >= 1) {
+            binaryRepresentation += '1';
+            num -= 1; // Subtract 1 to get the remaining fractional part
+        } else {
+            binaryRepresentation += '0';
+        }
+        count++;
+    }
+
+    return binaryRepresentation;
+}
+
+int main() {
+    double number = 0.625; // Example number between 0 and 1
+
+    std::string binaryString = binToStr(number);
+    std::cout << "Binary representation: " << binaryString << std::endl;
+
+    return 0;
+}
