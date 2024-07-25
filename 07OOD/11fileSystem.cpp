@@ -1,5 +1,18 @@
 //https://godbolt.org/z/v74r3jqez
 
+
+/*
+Designing an in-memory file system involves defining data structures and algorithms to manage files, directories, and storage blocks. 
+Here’s a simple example of an in-memory file system in C++:
+
+Data Structures
+Inode: Stores metadata for a file, such as size, creation time, modification time, and permissions.
+Directory Entry: Maps file names to their corresponding inodes.
+Data Block: Actual storage for file content.
+Superblock: Contains overall information about the file system, such as size and free space.
+
+*/
+
 #include <iostream>
 #include <unordered_map>
 #include <vector>
