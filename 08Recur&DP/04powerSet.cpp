@@ -4,6 +4,7 @@
 
 using namespace std;
 
+// method1: backtrack
 //helper func
 
 void backtrack(vector<int> &num,vector<int> &subset, int start,vector<vector<int>> &res ){
